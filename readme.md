@@ -12,9 +12,10 @@ add this to `/etc/fail2ban/jail.local`:
 	enabled = true
 	filter = bitwarden
 	logpath = /path/to/your/bwdata/logs/nginx/access.log
+	chain = DOCKER-USER
 	maxretry = 5
-	bantime = 300
-	port = http,https
+	bantime = 1h
+	port = 8080,8443
 
 adjust `maxretry` and `bantime`
 
