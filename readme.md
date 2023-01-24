@@ -21,6 +21,7 @@ adjust `maxretry` and `bantime`
 test with `sudo fail2ban-regex /path/to/your/bwdata/logs/nginx/access.log /etc/fail2ban/filter.d/bitwarden`
 
 If your log records only show docker internal ip addresses try to adjust the `real_ips` property in `bwdata/config.yml`:
+
 ```
 # Defined as a dictionary, e.g.:
 # real_ips: ['10.10.0.0/24', '172.16.0.0/16']
